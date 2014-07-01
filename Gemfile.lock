@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rmfluxus_rails (0.0.1)
+    rmfluxus-rails (0.0.2)
       rails (~> 4.1.2.rc1)
 
 GEM
@@ -101,6 +101,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rmfluxus_rails!
+  rmfluxus-rails!
   rspec
   sqlite3

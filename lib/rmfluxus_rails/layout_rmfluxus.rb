@@ -12,7 +12,7 @@ module RmfluxusRails
     included do
       
       def exportar
-        template_file = File.open("lib/#{self.class.name.underscore}.rmfluxus.erb", 'r').read
+        template_file = File.open("#{Rails.root}/app/lib/#{self.class.name.underscore}.rmfluxus.erb", 'r').read
         erb = ERB.new(template_file)
         erb.result(binding)
       end

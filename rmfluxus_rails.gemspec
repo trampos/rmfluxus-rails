@@ -5,7 +5,7 @@ require "rmfluxus_rails/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "rmfluxus_rails"
+  s.name        = "rmfluxus-rails"
   s.version     = RmfluxusRails::VERSION
   s.authors     = ["Marcel"]
   s.email       = ["marcel@trampos.co"]

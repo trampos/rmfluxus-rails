@@ -12,7 +12,8 @@ module RmfluxusRails
     included do
       
       def exportar
-        template_file = File.join(File.dirname(File.expand_path(__FILE__)), "../#{self.class.name.underscore}.rmfluxus.erb")
+        template_path = "templates/#{self.class.name.underscore.gsub('rmfluxus_rails/', '')}.rmfluxus.erb"
+        template_file = File.open(File.join(File.dirname(File.expand_path(__FILE__)), template_path), 'r').read
         erb = ERB.new(template_file)
         erb.result(binding)
       end

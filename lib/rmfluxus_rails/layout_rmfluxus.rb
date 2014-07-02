@@ -12,7 +12,7 @@ module RmfluxusRails
     included do
       
       def exportar
-        template_file =File.join(File.dirname(File.expand_path(__FILE__)), '../#{self.class.name.underscore}.rmfluxus.erb')
+        template_file = File.join(File.dirname(File.expand_path(__FILE__)), "../#{self.class.name.underscore}.rmfluxus.erb")
         erb = ERB.new(template_file)
         erb.result(binding)
       end
